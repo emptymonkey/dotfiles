@@ -1,0 +1,21 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+{
+	open(FILE_IN, $ARGV[0]) or die "$!";
+	while(<FILE_IN>){}
+
+	my $rand = int(rand($.));
+	close(FILE_IN);
+
+	open(FILE_IN, $ARGV[0]) or die "$!";
+	my $i = 0;
+	while(<FILE_IN>){
+		chomp();
+		if($i++ == $rand){
+			last;
+		}
+	}
+	print "$_\n";	
+}

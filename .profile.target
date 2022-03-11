@@ -1,0 +1,6 @@
+# /lib/x86_64-linux-gnu/ld-2.19.so /usr/bin/perl -U -e '$<=$(=$>;system("/bin/bash");'
+alias ls='ls -a --color=auto'
+export PS1="\[\033[4;33m\]\u@\h\[\033[0;33m\]:\[\033[34m\]\w\[\033[0;33m\]$ \[\033[0m\]"
+export PATH="$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin"
+export HOME="/root"
+

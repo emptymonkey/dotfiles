@@ -1,0 +1,16 @@
+# ~/.profile: executed by Bourne-compatible login shells.
+
+if [ "$BASH" ]; then
+  if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+  fi
+fi
+
+#mesg n
+
+alias ls='ls -a --color=auto'
+
+export EDITOR=/usr/bin/vi
+export PS1="\[\033[91m\]\u@\h:\[\033[96m\]\w\[\033[91m\]$ \[\033[0m\]"
+
+export CFLAGS="-Wall -Wextra -ansi -pedantic"
