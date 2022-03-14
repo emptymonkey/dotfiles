@@ -10,3 +10,4 @@ au BufRead,BufNewFile *.nasm set filetype=nasm
 color desert
 filetype plugin indent on
 set nofixendofline
+set paste
