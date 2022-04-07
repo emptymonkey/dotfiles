@@ -21,4 +21,4 @@ export GIT_COMMITTER_EMAIL="pseudorandom@gmail.com"
 alias passdump='openssl enc -d -aes-256-cbc -pbkdf2 -in '
 alias ls='ls -a --color'
 alias date="date -I'seconds' | sed 's/+00:00*$/Z/'"
-
+alias stats='sort | uniq -c | sort -rn'
