@@ -13,10 +13,10 @@ alias vi='vim'
 export VISUAL='vi'
 
 #export GIT_EDITOR="vi"
-#export GIT_AUTHOR_NAME="$NAME"
-#export GIT_AUTHOR_EMAIL="$EMAIL"
-#export GIT_COMMITTER_NAME="$NAME"
-#export GIT_COMMITTER_EMAIL="$EMAIL"
+#export GIT_AUTHOR_NAME="emptymonkey"
+#export GIT_COMMITTER_NAME="emptymonkey"
+#export GIT_AUTHOR_EMAIL="pseudorandom@gmail.com"
+#export GIT_COMMITTER_EMAIL="pseudorandom@gmail.com"
 
 alias passdump='openssl enc -d -aes-256-cbc -pbkdf2 -in '
 alias ls='ls -a --color'
