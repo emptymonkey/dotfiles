@@ -3,13 +3,18 @@
 use strict;
 
 {
-	open(FILE_IN, $ARGV[0]) or die "$!";
+	my $dictionary = "/usr/share/dict/american-english";
+
+	if(@ARGV){
+		$dictionary = $ARGV[0];
+	}
+	open(FILE_IN, $dictionary) or die "$!";
 	while(<FILE_IN>){}
 
 	my $rand = int(rand($.));
 	close(FILE_IN);
 
-	open(FILE_IN, $ARGV[0]) or die "$!";
+	open(FILE_IN, $dictionary) or die "$!";
 	my $i = 0;
 	while(<FILE_IN>){
 		chomp();
