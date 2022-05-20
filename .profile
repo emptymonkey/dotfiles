@@ -26,3 +26,6 @@ alias stats='sort | uniq -c | sort -rn'
 #set -o vi
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
 
+# These two fix the issue where displaying man pages on newer ubuntu machines is excrutiatingly slow, in some environments.
+export MANPATH="/usr/local/man:/usr/local/share/man:/usr/share/man"
+ln -s /usr/bin/preconv /usr/bin/gpreconv
