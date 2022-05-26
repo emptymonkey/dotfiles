@@ -4,6 +4,11 @@ export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:
 if [ `id -u` -eq 0 ]
 then
 	export PS1="\n\e[38;5;123m\t\[\e[0m \e[38;5;1m\u@\h \e[38;5;219m\w \e[0m\n➤ "
+	# These two fix the issue where displaying man pages on newer ubuntu machines is excrutiatingly slow, in some environments.
+	export MANPATH="/usr/local/man:/usr/local/share/man:/usr/share/man"
+	if [ ! -e  /usr/bin/gpreconv ]; then
+		ln -s /usr/bin/preconv /usr/bin/gpreconv
+	fi
 else
 	export PS1="\n\e[38;5;123m\t\[\e[0m \e[38;5;46m\u@\h \e[38;5;219m\w \e[0m\n➤ "
 fi
@@ -26,6 +31,3 @@ alias stats='sort | uniq -c | sort -rn'
 #set -o vi
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
 
-# These two fix the issue where displaying man pages on newer ubuntu machines is excrutiatingly slow, in some environments.
-export MANPATH="/usr/local/man:/usr/local/share/man:/usr/share/man"
-ln -s /usr/bin/preconv /usr/bin/gpreconv
