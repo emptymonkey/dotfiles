@@ -1,5 +1,5 @@
 
-export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/games"
 
 if [ `id -u` -eq 0 ]
 then
