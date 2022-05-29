@@ -30,3 +30,6 @@ alias stats='sort | uniq -c | sort -rn'
 #set -o vi
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
 
+export LC_ALL='en_US.UTF-8'
+export LANG='en_US.UTF-8'
+export LANGUAGE='en_US.UTF-8'
