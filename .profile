@@ -1,6 +1,6 @@
 
 export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/games"
-export MANPATH="/usr/local/man:/usr/local/share/man:/usr/share/man"
+export MANPATH="/opt/man:/usr/local/man:/usr/local/share/man:/usr/man:/usr/share/man:/usr/X11R6/man"
 
 if [ `id -u` -eq 0 ]
 then
