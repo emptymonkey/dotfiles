@@ -1,5 +1,6 @@
 
-export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/games"
+export MANPATH="/opt/man:/usr/local/man:/usr/local/share/man:/usr/man:/usr/share/man:/usr/X11R6/man"
 
 if [ `id -u` -eq 0 ]
 then
@@ -30,4 +31,8 @@ alias stats='sort | uniq -c | sort -rn'
 
 #set -o vi
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
+export CC=/usr/bin/clang
 
+export LC_ALL='en_US.UTF-8'
+export LANG='en_US.UTF-8'
+export LANGUAGE='en_US.UTF-8'
