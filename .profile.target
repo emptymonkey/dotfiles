@@ -1,5 +1,7 @@
-alias ls='ls -a --color=auto'
-export PS1="\[\033[4;33m\]\u@\h\[\033[0;33m\]:\[\033[34m\]\w\[\033[0;33m\]$ \[\033[0m\]"
+
+export TZ=UTC
+export PS1="\n\e[38;5;123m\D{%F}\e[38;5;99mT\e[38;5;123m\D{%T}\e[38;5;99mZ\[\e[0m \e[38;5;148m\u@\h \e[38;5;219m\w \e[0m\n➤ "
 export PATH="$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin"
 unset HISTFILE
+alias ls='ls -a --color=auto'
 id
