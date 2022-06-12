@@ -18,21 +18,21 @@ alias vim='vim.nox'
 alias vi='vim'
 export VISUAL='vi'
 
-#export GIT_EDITOR="vi"
-#export GIT_AUTHOR_NAME="emptymonkey"
-#export GIT_COMMITTER_NAME="emptymonkey"
-#export GIT_AUTHOR_EMAIL="pseudorandom@gmail.com"
-#export GIT_COMMITTER_EMAIL="pseudorandom@gmail.com"
-
 alias passdump='openssl enc -d -aes-256-cbc -pbkdf2 -in '
 alias ls='ls -a --color'
 alias date="date -I'seconds' | sed 's/+00:00*$/Z/'"
 alias stats='sort | uniq -c | sort -rn'
 
-#set -o vi
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
 export CC=/usr/bin/clang
 
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 export LANGUAGE='en_US.UTF-8'
+
+#export GIT_EDITOR="vi"
+#export GIT_AUTHOR_NAME="emptymonkey"
+#export GIT_COMMITTER_NAME="emptymonkey"
+#export GIT_AUTHOR_EMAIL="pseudorandom@gmail.com"
+#export GIT_COMMITTER_EMAIL="pseudorandom@gmail.com"
+#set -o vi
