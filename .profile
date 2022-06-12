@@ -2,6 +2,8 @@
 export PATH="$PATH:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/games"
 export MANPATH="/opt/man:/usr/local/man:/usr/local/share/man:/usr/man:/usr/share/man:/usr/X11R6/man"
 
+export TZ=UTC
+
 if [ `id -u` -eq 0 ]
 then
 	export PS1="\n\e[38;5;123m\D{%F}\e[38;5;99mT\e[38;5;123m\D{%T}\e[38;5;99mZ\[\e[0m \e[38;5;1m\u@\h \e[38;5;219m\w \e[0m\n➤ "
