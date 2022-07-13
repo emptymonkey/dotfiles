@@ -22,7 +22,7 @@ export VISUAL='vi'
 
 alias passdump='openssl enc -d -aes-256-cbc -pbkdf2 -in '
 alias ls='ls -a --color'
-alias date="date -u -Iseconds"
+alias date="TZ=/etc/localtime date -Iseconds"
 alias stats='sort | uniq -c | sort -rn'
 
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
