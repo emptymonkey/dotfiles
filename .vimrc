@@ -6,8 +6,10 @@ set formatoptions-=c
 set formatoptions-=r
 set formatoptions-=o
 set hlsearch
-au BufRead,BufNewFile *.nasm set filetype=nasm
 color desert
 filetype plugin indent on
 set nofixendofline
 set paste
+
+au BufRead,BufNewFile *.nasm set filetype=nasm
+au BufRead,BufNewFile *.md setlocal textwidth=120
