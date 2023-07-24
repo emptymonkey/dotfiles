@@ -22,7 +22,6 @@ export VISUAL='vi'
 
 alias passdump='openssl enc -d -aes-256-cbc -pbkdf2 -in '
 alias ls='ls -a --color'
-alias date="TZ=/etc/localtime date -Iseconds"
 alias stats='sort | uniq -c | sort -rn'
 
 export CFLAGS='-std=c18 -Wall -Wextra -pedantic'
@@ -31,6 +30,9 @@ export CC=/usr/bin/clang
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 export LANGUAGE='en_US.UTF-8'
+
+alias date="TZ=/etc/localtime date -Iseconds"
+#alias date="date -Iseconds"
 
 #export GIT_EDITOR="vi"
 #export GIT_AUTHOR_NAME="emptymonkey"
