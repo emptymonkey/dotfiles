@@ -40,3 +40,5 @@ alias date="TZ=/etc/localtime date -Iseconds"
 #export GIT_AUTHOR_EMAIL="pseudorandom@gmail.com"
 #export GIT_COMMITTER_EMAIL="pseudorandom@gmail.com"
 #set -o vi
+
+XDG_RUNTIME_DIR=/run/user/$UID
